@@ -1,10 +1,13 @@
 {
+  
   "name": "csis3380assignment2bmicalc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,9 +19,12 @@
   "bugs": {
     "url": "https://github.com/RegalRoy/CSIS3380Assignment2BMICalc/issues"
   },
-  "homepage": "https://github.com/RegalRoy/CSIS3380Assignment2BMICalc#readme",
+  "homepage": "https://regalroy.github.io/CSIS3380Assignment2BMICalc",
   "dependencies": {
     "express": "^4.18.2",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
